@@ -1,5 +1,5 @@
 {
-  "name": "vite-plugin-vhosty",
+  "name": "@vhosty/vite-plugin",
   "version": "0.1.0",
   "description": "Serve the Vite dev server through vhosty: HTTPS and hot reload at https://<port>.<your-domain> over your tailnet",
   "keywords": [

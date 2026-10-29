@@ -1,4 +1,4 @@
-# vite-plugin-vhosty
+# @vhosty/vite-plugin
 
 Runs your Vite dev server through [vhosty](https://github.com/zacksmash/vhosty), with
 HTTPS and hot reload at `https://<port>.<your-domain>`, from any device on your tailnet.
@@ -16,7 +16,7 @@ HTTPS and hot reload at `https://<port>.<your-domain>`, from any device on your 
 ## Install
 
 ```bash
-npm i -D vite-plugin-vhosty
+npm i -D @vhosty/vite-plugin
 ```
 
 ```js
@@ -24,7 +24,7 @@ npm i -D vite-plugin-vhosty
 import { defineConfig } from 'vite';
 import laravel from 'laravel-vite-plugin';
 import vue from '@vitejs/plugin-vue';
-import vhosty from 'vite-plugin-vhosty';
+import vhosty from '@vhosty/vite-plugin';
 
 export default defineConfig({
     plugins: [
