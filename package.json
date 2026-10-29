@@ -1,0 +1,54 @@
+{
+  "name": "vite-plugin-vhosty",
+  "version": "0.1.0",
+  "description": "Serve the Vite dev server through vhosty: HTTPS and hot reload at https://<port>.<your-domain> over your tailnet",
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "vhosty",
+    "tailscale",
+    "caddy",
+    "laravel",
+    "hmr",
+    "https"
+  ],
+  "license": "MIT",
+  "author": "Zack Warren",
+  "homepage": "https://github.com/zacksmash/vite-plugin-vhosty#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zacksmash/vite-plugin-vhosty.git"
+  },
+  "bugs": "https://github.com/zacksmash/vite-plugin-vhosty/issues",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "peerDependencies": {
+    "vite": ">=5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "laravel-vite-plugin": "^3.2.0",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
+  }
+}
