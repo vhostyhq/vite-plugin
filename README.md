@@ -1,6 +1,6 @@
 # @vhosty/vite-plugin
 
-Runs your Vite dev server through [vhosty](https://github.com/zacksmash/vhosty), with
+Runs your Vite dev server through [vhosty](https://github.com/vhostyhq/vhosty), with
 HTTPS and hot reload at `https://<port>.<your-domain>`, from any device on your tailnet.
 
 ```
@@ -83,7 +83,7 @@ APP_URL=https://escrow.vhosty.link
 ```
 
 When vhosty serves the app through PHP-FPM, Laravel already generates `https://` links.
-See the [vhosty Laravel guide](https://github.com/zacksmash/vhosty/blob/main/docs/laravel-vite.md)
+See the [vhosty Laravel guide](https://github.com/vhostyhq/vhosty/blob/main/docs/laravel-vite.md)
 for `artisan serve` and Octane.
 
 ## Troubleshooting

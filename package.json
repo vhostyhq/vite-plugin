@@ -14,12 +14,12 @@
   ],
   "license": "MIT",
   "author": "Zack Warren",
-  "homepage": "https://github.com/zacksmash/vite-plugin-vhosty#readme",
+  "homepage": "https://github.com/vhostyhq/vite-plugin#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zacksmash/vite-plugin-vhosty.git"
+    "url": "git+https://github.com/vhostyhq/vite-plugin.git"
   },
-  "bugs": "https://github.com/zacksmash/vite-plugin-vhosty/issues",
+  "bugs": "https://github.com/vhostyhq/vite-plugin/issues",
   "type": "module",
   "types": "./dist/index.d.ts",
   "exports": {
