@@ -150,6 +150,10 @@ describe('with laravel-vite-plugin', () => {
         delete process.env.VITEST;
         cleanup.push(async () => { process.env.VITEST = vitest; });
 
+        // ...and refuses to start a dev server when CI is set (GitHub Actions)
+        process.env.LARAVEL_BYPASS_ENV_CHECK = '1';
+        cleanup.push(async () => { delete process.env.LARAVEL_BYPASS_ENV_CHECK; });
+
         await start(root, [
             vhosty({ domain: 'vhosty.link', port, configPath: NO_CONFIG }),
             laravel({ input: ['resources/js/app.js'], hotFile, refresh: false }),
